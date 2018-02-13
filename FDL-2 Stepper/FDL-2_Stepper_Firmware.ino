@@ -1,5 +1,4 @@
 // FDL-2 Blaster Firmware
-// Last Update: 2017-3-24
 
 // /u/torukmakto4s code is mixed in with this to control a stepper linearly
 // See
