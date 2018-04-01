@@ -1,5 +1,5 @@
 //FDL-2+ Blaster Firmware
-//Last Update: 2017-5-19
+//Last Update: 2018-04-01
 
 SYSTEM_MODE(SEMI_AUTOMATIC);
 
@@ -165,7 +165,8 @@ int getROF(){
     }
     else{
         int val = analogRead(rofSenseIn);
-        int rofPercent = map(val, 0, 4094, 0, 100);
+        int rofPercent = map(val, 0, 4094, currentSettingsStruct.lowROF, currentSettingsStruct.highROF);
+        return rofPercent;
     }
 }
 
